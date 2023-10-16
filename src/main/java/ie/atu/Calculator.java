@@ -7,6 +7,7 @@ public class Calculator {
         System.out.println("Hello");
         add();
         multiple();
+        divide();
     }
     public static void add()
     { System.out.println("addition: ");
@@ -33,5 +34,18 @@ public class Calculator {
 
         int multi =num1 * num2;
         System.out.println("The multiple is "+multi);
+    }
+    public static void divide()
+    {
+        System.out.println("divide : ");
+        System.out.println("Please enter your dividend :");
+        Scanner inputs= new Scanner(System.in);
+        int num1 = inputs.nextInt();
+
+        System.out.println("Please enter your divisor :");
+        int num2 =inputs.nextInt();
+
+        int divide =num1 / num2;
+        System.out.println("The answer is "+divide);
     }
 }
