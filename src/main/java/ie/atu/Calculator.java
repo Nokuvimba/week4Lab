@@ -5,9 +5,18 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[]args){
         System.out.println("Hello");
+
+        
+
+    }
+    public static void subtract()
+    {
+        System.out.println("Subtraction:\n ");
+        System.out.println("Please enter your first number :");
         add();
         multiple();
         divide();
+      subtract();
     }
     public static void add()
     { System.out.println("addition: ");
@@ -15,10 +24,10 @@ public class Calculator {
         Scanner inputs= new Scanner(System.in);
         int firstNumber = inputs.nextInt();
 
-        System.out.println("Please your second :");
+        System.out.println("Please enter your second number:");
         int secondNumber =inputs.nextInt();
 
-        int total =firstNumber + secondNumber;
+        int total =firstNumber - secondNumber;
         System.out.println("The total is "+total);
     }
 
